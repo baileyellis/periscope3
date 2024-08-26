@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+body {
+	color: #FF0000;
+	background-color: black;
+	font-family: 'Courier New', monospace;
+
+}
+.sobellebody{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	image-rendering: pixelated;
+	text-align: center;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	color: #c1b492;
+}
+
+a:hover {
+	color: #FF0000;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #0000FF;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+section {
+	width: 60%;
+	background-color: #000000;
+	height: auto;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+	border: solid #FF0000;
+}
+
+aside {
+	text-align: center
+}
+
+aside a {
+	color: #000000
+}
+
+aside p {
+	text-align: center;
+	color: #000000
+}
+
+.theta {
+	width: 50%;
+	background-color: #000000;
+	height: auto;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	text-align: left;
+	font-size: 14px;
+	padding-top: 20px;
+	border: solid #FF0000;
+}
+#rgbFilter {
+	background-image: url("/rgb_filter.png");
+	background-position: 0px 0px;
+	z-index: 100;
+	mix-blend-mode: overlay;
+	image-rendering: pixelated;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: rgb 1s infinite linear;
+	pointer-events: none;
+}
+#image-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: center center;
+	transform: translate(-50%, -50%);
+	width: 384px;
+	height: 384px;
+	display: grid;
+	grid-template-columns: repeat(128, 3fr);
+	grid-template-rows: repeat(128, 3fr);
+}
+#frame {
+	background-image: url(/fauuxframe.png);
+	background-repeat: none;
+	background-position: center center;
+	background-size: cover;
+	z-index: 90;
+	image-rendering: pixelated;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: center center;
+	transform: translate(-50%, -50%);
+	width: 480px;
+	height: 480px;
+	image-rendering: pixelated;
+}
